@@ -1,0 +1,62 @@
+name: CAOfficials
+options:
+  bundleIdPrefix: com.californiaofficials
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "15.0"
+  generateEmptyDirectories: true
+  groupSortPosition: bottom
+
+settings:
+  base:
+    DEVELOPMENT_TEAM: ""
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.9"
+    ENABLE_USER_SCRIPT_SANDBOXING: false
+
+packages:
+  Supabase:
+    url: https://github.com/supabase-community/supabase-swift
+    from: "2.0.0"
+
+targets:
+  CAOfficials:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: CAOfficialsIOS
+        excludes:
+          - "**/*.xcassets"
+      - path: CAOfficialsIOS/Assets.xcassets
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.californiaofficials.app
+        INFOPLIST_FILE: CAOfficialsIOS/Info.plist
+        CODE_SIGN_STYLE: Automatic
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SUPPORTS_MACCATALYST: false
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: true
+    dependencies:
+      - package: Supabase
+    preBuildScripts: []
+    postBuildScripts: []
+
+schemes:
+  CAOfficials:
+    build:
+      targets:
+        CAOfficials: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
