@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -92,7 +92,7 @@
 		A89B8E7CB5A532817EC04E19 /* Officials_PolicyPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Officials_PolicyPosition.swift; sourceTree = "<group>"; };
 		AC58125FD0AE4DBA63037ACA /* CAOfficialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAOfficialsApp.swift; sourceTree = "<group>"; };
 		ADC36BF25796A23E4DA56150 /* Connect_OfficialProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connect_OfficialProfileView.swift; sourceTree = "<group>"; };
-		AF71A682869027BB03F6B657 /* CAOfficials.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CAOfficials.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF71A682869027BB03F6B657 /* CAOfficials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAOfficials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B098F2B73A74A691017A8458 /* Officials_SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Officials_SettingsView.swift; sourceTree = "<group>"; };
 		BF4CAE8217B5B9AF28F36CA3 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		C4074A9BBA40445633887D03 /* Connect_ComposeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connect_ComposeViewModel.swift; sourceTree = "<group>"; };
@@ -403,7 +403,6 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					F6B8FE27EF7788D050795BB9 = {
-						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -421,7 +420,6 @@
 			packageReferences = (
 				3585649EA9BA526C90F9ABDF /* XCRemoteSwiftPackageReference "supabase-swift" */,
 			);
-			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -503,6 +501,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R5Y2T7ZS2X;
 				INFOPLIST_FILE = CAOfficialsIOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -591,6 +590,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R5Y2T7ZS2X;
 				INFOPLIST_FILE = CAOfficialsIOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
